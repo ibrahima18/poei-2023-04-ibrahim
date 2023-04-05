@@ -14,6 +14,7 @@ public class AmazonTest {
         driver.manage().window().maximize();
     }
 
+
     @AfterMethod
     public void teardown() {
         driver.quit();
@@ -22,5 +23,15 @@ public class AmazonTest {
     @Test
     public void testAmazon() {
         driver.get("https://www.amazon.fr");
+    }
+
+    @Test
+    public void testGoogle() {
+        driver.get("https://www.google.com");
+    }
+
+    @Test
+    public void testYoutube() {
+        driver.get("https://www.youtube.com");
     }
 }
